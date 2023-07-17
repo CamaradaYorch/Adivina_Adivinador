@@ -1,0 +1,93 @@
+
+▀ Programa: Adivina Adivinador V.1.2 ▀
+
+
+
+♦Descripción:
+
+	El programa "Adivina Adivinador" es un juego de adivinanzas desarrollado en el lenguaje de programación Python. 
+	El objetivo del juego es adivinar un color oculto en un número limitado de intentos. 
+	El programa proporciona pistas al jugador, indicando si las letras adivinadas están presentes en el color oculto. 
+	El juego incluye animaciones y mensajes interactivos para brindar una experiencia de juego más divertida.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+♦ Terminologías:
+
+	1. Color Oculto: 
+		Es el color que el jugador debe adivinar. Se selecciona de forma aleatoria de una lista de colores disponibles.
+
+	2. Intentos Restantes: 
+		Representa la cantidad de intentos que le quedan al jugador para adivinar el color oculto. 
+		El número de intentos disminuye cada vez que el jugador proporciona una respuesta incorrecta.
+
+	3. Letras Adivinadas: 
+		Es una lista que almacena las letras ingresadas por el jugador como parte de su intento para adivinar el color oculto. 
+		Las letras adivinadas se comparan con el color oculto para proporcionar pistas al jugador.
+
+	4. Adivinar Letra: 
+		Es una función que verifica si la letra ingresada por el jugador es válida y si ya ha sido adivinada anteriormente. 
+		En caso de ser válida y no repetida, se compara con el color oculto para determinar si es correcta.
+
+	5. Adivinar Palabra: 
+		Es una función que verifica si la palabra ingresada por el jugador coincide con el color oculto. 
+		Si la palabra es correcta, el jugador ha adivinado el color oculto y gana el juego.
+
+	6. Jugar: 
+		Es el método principal del juego que se encarga de iniciar el juego, solicitar el nombre del jugador, 
+		presentar las instrucciones y gestionar los intentos del jugador hasta que se agoten o se adivine el color oculto.
+
+	7. Obtener Palabra Mostrada: 
+		Es una función que genera una representación de la palabra oculta con espacios en blanco para las letras no adivinadas. 
+		Esta representación se muestra al jugador para indicar qué letras ha adivinado correctamente.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+♦ Funciones:
+
+	1. adivinar_letra(letra)
+   		- Descripción: Verifica si la letra ingresada es válida y si ya ha sido adivinada anteriormente. 
+			Si es una letra válida y no repetida, se compara con el color oculto para determinar si es correcta.
+
+	2. adivinar_palabra(palabra)
+   		- Descripción: Verifica si la palabra ingresada por el jugador coincide con el color oculto. 
+			Si la palabra es correcta, el jugador ha adivinado el color oculto y gana el juego.
+
+	3. jugar()
+   		- Descripción: Inicia el juego, solicita el nombre del jugador, 
+			presenta las instrucciones y gestiona los intentos del jugador hasta que se agoten o se adivine el color oculto.
+
+	4. obtener_palabra_mostrada()
+   		- Descripción: Genera una representación de la palabra oculta con espacios en blanco para las letras no adivinadas. 
+			Esta representación se muestra al jugador para indicar qué letras ha adivinado correctamente.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+♦ Clases:
+
+	1. adivina_adivinador_v12
+   		- Descripción: Representa el juego "Adivina Adivinador". 
+			Al crear una instancia de esta clase, se define el nombre del jugador y se inicializan las variables necesarias para el juego, 
+			como la lista de colores disponibles, el color oculto seleccionado aleatoriamente, los intentos restantes y las letras adivinadas.
+
+  	 - Métodos:
+    		- __init__(self, nombre): Constructor de la clase que recibe el nombre del jugador y realiza la inicialización de las variables.
+
+     		- adivinar_letra(self, letra): Verifica si la letra ingresada es válida y si ya ha sido adivinada anteriormente. Si es una letra válida y no repetida, 
+						se compara con el color oculto para determinar si es correcta.
+
+     		- adivinar_palabra(self, palabra): Verifica si la palabra ingresada por el jugador coincide con el color oculto. Si la palabra es correcta,
+						 el jugador ha adivinado el color oculto y gana el juego.
+
+     		- jugar(self): Inicia el juego, solicita el nombre del jugador, presenta las instrucciones y gestiona los intentos del jugador 
+						hasta que se agoten o se adivine el color oculto.
+
+     		- obtener_palabra_mostrada(self): Genera una representación de la palabra oculta con espacios en blanco para las letras no adivinadas. 
+						Esta representación se muestra al jugador para indicar qué letras ha adivinado correctamente.
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Desarrollado por:
+Autor: [Jorge Mera]
+Fecha: [16/07/2023]
